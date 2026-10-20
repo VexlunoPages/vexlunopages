@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030914">
+<meta name="description" content="VEXLUNO tworzy nowoczesne strony internetowe dla firm. Responsywny design, szybkie działanie i projekt dopasowany do Twojego biznesu.">
+<title>VEXLUNO — Strony, które pracują na Twój biznes</title>
+<style>
+:root{--bg:#030914;--panel:#071426;--panel2:#0a1a30;--blue:#078cff;--cyan:#16c7ff;--white:#f4f8ff;--muted:#9aacc5;--line:#16304c;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:#030914eF;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff0d}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:3px;font-size:1.1rem}.brand-mark{font-size:2.1rem;font-weight:1000;line-height:1;color:var(--blue);transform:skew(-12deg);text-shadow:0 0 25px #078cff66}.brand small{display:block;letter-spacing:0;font-weight:400;color:var(--muted);font-size:.68rem;margin-top:-3px}.navlinks{display:flex;align-items:center;gap:28px;font-size:.86rem;color:#c1cee0}.navlinks a:hover{color:var(--cyan)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;border:1px solid transparent;border-radius:30px;padding:13px 22px;background:linear-gradient(100deg,#0798ff,#0874f9);color:white;font-weight:800;font-size:.9rem;box-shadow:0 8px 28px #007bff26;transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px #007bff55}.btn.outline{background:transparent;border-color:#45617d;box-shadow:none}.menu{display:none;color:white;background:none;border:0;font-size:1.5rem}
+.hero{position:relative;overflow:hidden;padding:80px 0 55px;background:radial-gradient(ellipse at 77% 42%,#064d8b2e,transparent 42%),linear-gradient(180deg,#030914,#041021)}.hero:after{content:"";position:absolute;left:48%;right:-15%;bottom:0;height:170px;background:linear-gradient(180deg,transparent,#06162a),repeating-linear-gradient(165deg,transparent 0 45px,#0a438433 46px 48px);transform:perspective(280px) rotateX(30deg);opacity:.5;pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:42px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #0a4b7c;border-radius:30px;padding:6px 13px;color:#c8e7ff;font-size:.8rem;background:#06172a}.eyebrow:before{content:"";width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(2.8rem,5.3vw,4.8rem);letter-spacing:-3px;line-height:1.03;margin:20px 0 18px}h1 span,.blue{color:var(--blue)}.lead{color:#b3c2d8;font-size:1.05rem;max-width:550px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:27px 0}.checks{display:flex;flex-wrap:wrap;gap:12px 20px;font-size:.76rem;color:#b2c4da}.checks span:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:7px}
+.device-scene{position:relative;min-height:370px;display:grid;place-items:center}.glow{position:absolute;width:350px;height:300px;background:#007dff25;filter:blur(60px);border-radius:50%}.laptop{position:relative;width:min(100%,510px);border:1px solid #1b5783;border-radius:13px;padding:9px;background:linear-gradient(145deg,#1b2d43,#050b14);box-shadow:0 25px 80px #000b,0 0 35px #008cff20;transform:perspective(900px) rotateY(-5deg) rotateX(2deg)}.screen{border-radius:7px;overflow:hidden;background:#071426;border:1px solid #244765}.screenbar{height:24px;background:#0b1a2d;display:flex;align-items:center;gap:5px;padding:0 9px}.screenbar i{width:5px;height:5px;background:#3b678b;border-radius:50%}.screenbar span{font-size:.55rem;color:#7d9ab9;margin-left:10px}.webmock{padding:19px 20px 23px;background:radial-gradient(circle at 85% 30%,#104a783b,transparent 40%),#071426}.webmock nav{display:flex;justify-content:space-between;font-size:.55rem;color:#9fb8d3}.webmock nav b{color:var(--cyan);letter-spacing:1px}.webmock h2{font-size:1.45rem;line-height:1.1;max-width:260px;margin:32px 0 10px}.webmock p{font-size:.58rem;color:#9fb2cb;max-width:245px}.mockbtn{display:inline-block;padding:7px 11px;background:var(--blue);border-radius:4px;font-size:.55rem;font-weight:bold;margin-top:7px}.mocktiles{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:23px}.mocktiles div{height:42px;border:1px solid #1d3957;background:linear-gradient(135deg,#102944,#09182a);border-radius:5px}.laptopbase{position:relative;margin:-1px auto 0;width:112%;left:-6%;height:15px;background:linear-gradient(#71849a,#172739 35%,#050a10);clip-path:polygon(5% 0,95% 0,100% 80%,0 80%);border-radius:0 0 18px 18px}.phone{position:absolute;right:0;bottom:9px;width:105px;height:205px;border-radius:18px;padding:6px;background:linear-gradient(120deg,#71849a,#080e17 35%);border:1px solid #2a75a4;box-shadow:0 15px 35px #000b;transform:rotate(5deg)}.phonein{height:100%;border-radius:13px;background:#071426;padding:22px 8px 8px;overflow:hidden}.phonein b{font-size:.52rem;color:var(--cyan)}.phonein h3{font-size:.9rem;line-height:1.1;margin:20px 0 7px}.phonein p{font-size:.48rem;color:#9aacc5}.phonein .mockbtn{font-size:.45rem;padding:5px}
+.trust{border-block:1px solid #142b42;background:#050d19}.trustin{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 0;color:#9aacc5;font-size:.8rem}.trustin b{color:white}
+section.content{padding:82px 0}.section-head{max-width:700px;margin-bottom:35px}.kicker{font-size:.73rem;text-transform:uppercase;letter-spacing:1.7px;font-weight:900;color:var(--cyan)}h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;letter-spacing:-1.5px;margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}.services{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.card{border:1px solid var(--line);border-radius:13px;padding:22px 18px;background:linear-gradient(145deg,#09182b,#050d19);transition:.2s}.card:hover{transform:translateY(-4px);border-color:#087dcb}.ico{width:43px;height:43px;display:grid;place-items:center;border-radius:11px;background:#087dcb20;color:var(--cyan);font-size:1.3rem;margin-bottom:17px}.card h3{font-size:1rem;line-height:1.3;margin:0 0 9px}.card p{font-size:.82rem;color:var(--muted);margin:0}
+.portfolio{background:#040c18;border-block:1px solid #10253a}.portfolio-top{display:flex;align-items:end;justify-content:space-between;gap:25px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.project{overflow:hidden;border:1px solid #17314c;border-radius:12px;background:#071426}.project-art{height:180px;padding:18px;display:grid;place-items:center;background:radial-gradient(circle at 70% 20%,#0c70b52b,transparent 50%),linear-gradient(140deg,#0d2036,#050b14)}.fakepage{width:100%;max-width:300px;background:#07101d;border:1px solid #20405e;border-radius:5px;padding:12px;box-shadow:0 10px 30px #0008}.fakehead{display:flex;justify-content:space-between;color:#9bb6d0;font-size:.48rem}.fakehead b{color:var(--cyan)}.fakehero{margin-top:17px;padding:16px 11px;border-radius:4px;background:linear-gradient(120deg,#102d49,#0a1b2d)}.fakehero strong{display:block;font-size:1rem;line-height:1.1;max-width:170px}.fakehero span{display:block;font-size:.48rem;color:#9cb5ce;margin-top:7px}.fakeblocks{display:flex;gap:6px;margin-top:10px}.fakeblocks i{height:24px;flex:1;background:#102944;border:1px solid #183a59;border-radius:3px}.project-copy{padding:17px}.project-copy h3{margin:0 0 4px;font-size:1rem}.project-copy p{margin:0;color:var(--muted);font-size:.82rem}.pill{display:inline-block;margin-top:10px;padding:4px 9px;border-radius:30px;background:#078cff18;color:#65c7ff;font-size:.68rem}.disclaimer{color:#7186a0;font-size:.76rem;margin-top:16px}
+.why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}.code-art{min-height:300px;border:1px solid #14395a;border-radius:15px;background:radial-gradient(circle at 20% 80%,#087dcb20,transparent 45%),#061020;padding:26px;display:flex;align-items:center;justify-content:center;overflow:hidden}.code-window{width:100%;padding:20px;border-radius:9px;background:#030a13;border:1px solid #18344e;color:#76b9e8;font: .8rem/2 monospace;box-shadow:0 20px 50px #0008}.code-window .dim{color:#4d718f}.code-window .bright{color:#24c5ff}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:24px}.benefit{display:flex;gap:13px}.benefit .ico{flex:0 0 42px;margin:0}.benefit h3{margin:0 0 4px;font-size:.95rem}.benefit p{margin:0;color:var(--muted);font-size:.8rem}
+.pricing{background:linear-gradient(180deg,#061224,#030914);border-block:1px solid #122a42}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.price-card{position:relative}.price-card.featured{border-color:#087dcb;box-shadow:0 0 0 1px #087dcb18}.popular{position:absolute;top:14px;right:13px;background:var(--blue);color:white;font-size:.63rem;font-weight:900;padding:4px 8px;border-radius:30px}.price{font-size:2.1rem;font-weight:900;letter-spacing:-1px;margin:17px 0 0}.price small{font-size:.75rem;font-weight:500;color:var(--muted);letter-spacing:0}.features{padding:0;list-style:none;margin:19px 0 24px}.features li{font-size:.83rem;color:#c1d0e2;padding:6px 0}.features li:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:9px}.price-card .btn{width:100%;font-size:.82rem}.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.faq details{padding:17px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-weight:750;list-style:none;display:flex;justify-content:space-between;gap:16px}.faq summary:after{content:"+";color:var(--cyan);font-size:1.3rem}.faq details[open] summary:after{content:"−"}.faq details p{font-size:.87rem;color:var(--muted);margin:12px 0 0}
+.contact{padding:75px 0;background:radial-gradient(ellipse at 20% 80%,#064a8126,transparent 50%),#050d19;border-top:1px solid #132b43}.contactbox{display:grid;grid-template-columns:1fr .85fr;gap:45px;align-items:center;border:1px solid #16446b;border-radius:18px;padding:clamp(24px,5vw,48px);background:linear-gradient(125deg,#071a2d,#061020)}.contactbox p{color:var(--muted)}.contactform{display:grid;gap:11px}.contactform input,.contactform textarea{width:100%;padding:13px 14px;border:1px solid #1b3854;border-radius:9px;background:#030b16;color:white;outline:none}.contactform input:focus,.contactform textarea:focus{border-color:var(--cyan)}.contactform textarea{min-height:110px;resize:vertical}.hint{font-size:.72rem;color:#7f94ad}.footer{border-top:1px solid #142b42;padding:24px 0;color:#7e93ad;font-size:.78rem}.footerin{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footerlinks{display:flex;gap:18px}.footer a:hover{color:var(--cyan)}.mobile-cta{display:none}
+@media(max-width:950px){.services{grid-template-columns:repeat(3,1fr)}.hero-grid{gap:20px}.phone{right:-8px}.navlinks{gap:15px}.why-grid{gap:30px}}
+@media(max-width:700px){.wrap{width:calc(100% - 30px)}.nav{height:68px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#030914;padding:20px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.navlinks .btn{text-align:center}.hero{padding:50px 0 40px}.hero-grid{grid-template-columns:1fr}.device-scene{min-height:300px;margin-top:4px}.laptop{width:95%}.phone{right:0;bottom:0;width:85px;height:170px}.webmock h2{font-size:1.2rem}.services{grid-template-columns:1fr 1fr}.projects,.price-grid{grid-template-columns:1fr}.project-art{height:200px}.portfolio-top{align-items:start;flex-direction:column}.why-grid,.faq-grid,.contactbox{grid-template-columns:1fr;gap:28px}.benefits{gap:20px 13px}.code-art{min-height:240px}section.content{padding:62px 0}.trustin{justify-content:flex-start}.mobile-cta{display:flex;position:fixed;z-index:15;bottom:10px;left:12px;right:12px}.footer{padding-bottom:80px}}
+@media(max-width:420px){h1{font-size:2.65rem}.services{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}.checks{gap:9px 13px}.actions .btn{width:100%}.device-scene{min-height:265px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#start"><span class="brand-mark">N</span><span>VEXLUNO<small>Strony, które pracują na Twój biznes</small></span></a>
+<button class="menu" id="menuBtn" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+<nav class="navlinks" id="navLinks"><a href="#start">Strona główna</a><a href="#uslugi">Usługi</a><a href="#portfolio">Portfolio</a><a href="#o-mnie">O mnie</a><a href="#kontakt">Kontakt</a><a class="btn" href="#kontakt">Zamów stronę →</a></nav>
+</div></header>
+<main>
+<section class="hero" id="start"><div class="wrap hero-grid">
+<div><div class="eyebrow">Nowoczesne strony internetowe</div><h1>Twoja strona WWW <span>w najlepszej wersji.</span></h1><p class="lead">Tworzę nowoczesne, szybkie i responsywne strony internetowe dla firm i osób prywatnych. Pomagam wyróżnić się w sieci, przyciągać klientów i rozwijać Twój biznes.</p><div class="actions"><a class="btn" href="#kontakt">Zamów swoją stronę →</a><a class="btn outline" href="#portfolio">Zobacz portfolio ⊙</a></div><div class="checks"><span>Nowoczesny design</span><span>Szybkie ładowanie</span><span>Pełna responsywność</span><span>Podstawy SEO</span></div></div>
+<div class="device-scene" aria-label="Podgląd przykładowej strony na laptopie i telefonie"><div class="glow"></div><div class="laptop"><div class="screen"><div class="screenbar"><i></i><i></i><i></i><span>VEXLUNO — podgląd strony</span></div><div class="webmock"><nav><b>VEXLUNO</b><span>Strona główna　Usługi　Portfolio</span></nav><h2>Twój biznes<br>w sieci. Bez granic.</h2><p>Przenieś swoją markę na wyższy poziom dzięki nowoczesnej stronie internetowej.</p><span class="mockbtn">Sprawdź ofertę →</span><div class="mocktiles"><div></div><div></div><div></div></div></div></div><div class="laptopbase"></div></div><div class="phone"><div class="phonein"><b>VEXLUNO</b><h3>Twój biznes<br>w sieci.</h3><p>Profesjonalna strona, która robi wrażenie.</p><span class="mockbtn">Sprawdź ofertę</span></div></div></div>
+</div></section>
+<div class="trust"><div class="wrap trustin"><span><b>Design, który przyciąga.</b></span><span>✦ Dla lokalnych firm</span><span>✦ Z myślą o telefonach</span><span>✦ Jasne zasady współpracy</span></div></div>
+<section class="content" id="uslugi"><div class="wrap"><div class="section-head"><div class="kicker">Nasze usługi</div><h2>Co dla Ciebie <span class="blue">stworzymy?</span></h2><p>Od prostej wizytówki po rozbudowany serwis — zakres projektu dopasowuję do Twoich potrzeb, celów i budżetu.</p></div>
+<div class="services">
+<article class="card"><div class="ico">▣</div><h3>Strony wizytówki</h3><p>Proste, eleganckie strony dla firm, freelancerów i osób prywatnych. Idealne na start.</p></article>
+<article class="card"><div class="ico">◎</div><h3>Strony firmowe</h3><p>Rozbudowane serwisy z podstronami, formularzami i informacjami, które budują wiarygodność.</p></article>
+<article class="card"><div class="ico">🛒</div><h3>Sklepy internetowe</h3><p>Nowoczesne sklepy online — zakres funkcji i integracji ustalamy indywidualnie.</p></article>
+<article class="card"><div class="ico">&lt;/&gt;</div><h3>Web aplikacje</h3><p>Interaktywne rozwiązania i funkcje dopasowane do konkretnego pomysłu.</p></article>
+<article class="card"><div class="ico">✎</div><h3>Modernizacja stron</h3><p>Odświeżenie istniejącej strony, poprawa czytelności i dostosowanie do urządzeń mobilnych.</p></article>
+</div></div></section>
+<section class="content portfolio" id="portfolio"><div class="wrap"><div class="portfolio-top section-head"><div><div class="kicker">Portfolio</div><h2>Przykładowe projekty</h2><p>Każdy projekt powinien mieć swój charakter — od eleganckiej strony usługowej po nowoczesną markę online.</p></div><a class="btn" href="#kontakt">Stwórzmy Twój projekt →</a></div>
+<div class="projects">
+<article class="project"><div class="project-art"><div class="fakepage"><div class="fakehead"><b>AUTODETAIL</b><span>USŁUGI　GALERIA</span></div><div class="fakehero"><strong>Detaling na najwyższym poziomie.</strong><span>Zadbaj o każdy detal swojego auta.</span><div class="fakeblocks"><i></i><i></i><i></i></div></div></div></div><div class="project-copy"><h3>AutoDetail</h3><p>Pomysł na stronę firmy detailingowej.</p><span class="pill">Strona firmowa</span></div></article>
+<article class="project"><div class="project-art"><div class="fakepage"><div class="fakehead"><b>BUDOWLANKA</b><span>OFERTA　KONTAKT</span></div><div class="fakehero" style="background:linear-gradient(120deg,#3b352b,#171c22)"><strong>Solidne remonty. Na lata.</strong><span>Wykończenia wnętrz dopracowane w każdym detalu.</span><div class="fakeblocks"><i></i><i></i><i></i></div></div></div></div><div class="project-copy"><h3>Ra-Fix</h3><p>Pomysł na stronę firmy remontowej.</p><span class="pill">Strona usługowa</span></div></article>
+<article class="project"><div class="project-art"><div class="fakepage"><div class="fakehead"><b>FITZONE</b><span>OFERTA　TRENINGI</span></div><div class="fakehero" style="background:linear-gradient(120deg,#142c35,#11151c)"><strong>Trening to styl życia.</strong><span>Plan dopasowany do Twoich celów.</span><div class="fakeblocks"><i></i><i></i><i></i></div></div></div></div><div class="project-copy"><h3>FitZone</h3><p>Pomysł na stronę trenera personalnego.</p><span class="pill">Strona wizytówka</span></div></article>
+</div><p class="disclaimer">To demonstracyjne koncepcje portfolio, a nie potwierdzone realizacje komercyjne.</p></div></section>
+<section class="content" id="o-mnie"><div class="wrap why-grid"><div class="code-art"><div class="code-window"><span class="dim">// Twój pomysł</span><br><span class="bright">const</span> strona = {<br>&nbsp; design: <span class="bright">'nowoczesny'</span>,<br>&nbsp; cel: <span class="bright">'rozwój biznesu'</span>,<br>&nbsp; mobile: <span class="bright">true</span>,<br>&nbsp; podejście: <span class="bright">'indywidualne'</span><br>};<br><span class="dim">// Zamieńmy pomysł w projekt.</span></div></div><div><div class="kicker">Dlaczego warto?</div><h2>Dlaczego właśnie <span class="blue">VEXLUNO?</span></h2><p style="color:var(--muted)">Stawiam na przejrzystą komunikację, dopracowany wygląd i rozwiązania, które mają sens dla Twojej firmy.</p><div class="benefits" style="margin-top:27px"><div class="benefit"><div class="ico">ϟ</div><div><h3>Sprawna realizacja</h3><p>Jasny plan i termin ustalony przed rozpoczęciem pracy.</p></div></div><div class="benefit"><div class="ico">☆</div><div><h3>Indywidualne podejście</h3><p>Projekt dopasowany do Twojej branży i odbiorców.</p></div></div><div class="benefit"><div class="ico">⬡</div><div><h3>Wsparcie</h3><p>Pomoc w trakcie tworzenia i przy uruchomieniu strony.</p></div></div><div class="benefit"><div class="ico">♡</div><div><h3>Przejrzysta wycena</h3><p>Zakres i koszty ustalamy przed rozpoczęciem prac.</p></div></div></div></div></div></section>
+<section class="content pricing" id="cennik"><div class="wrap"><div class="section-head"><div class="kicker">Oferta i ceny</div><h2>Strony od <span class="blue">499 zł</span></h2><p>Przykładowe ceny na start — ostateczna kwota zależy od zakresu, treści i dodatkowych funkcji.</p></div><div class="price-grid">
+<article class="card price-card"><h3>Start</h3><p style="color:var(--muted);font-size:.83rem">Dla małej firmy potrzebującej wizytówki online.</p><div class="price">499 zł <small>od</small></div><ul class="features"><li>Strona typu one-page</li><li>Wersja mobilna</li><li>Oferta i kontakt</li><li>Podstawy SEO</li></ul><a class="btn outline" href="#kontakt" data-package="Start">Zapytaj o pakiet</a></article>
+<article class="card price-card featured"><span class="popular">Polecany</span><h3>Biznes</h3><p style="color:var(--muted);font-size:.83rem">Dla firmy, która chce rozwinąć swoją obecność online.</p><div class="price">999 zł <small>od</small></div><ul class="features"><li>Strona z podstronami</li><li>Indywidualny wygląd</li><li>Sekcja realizacji</li><li>Formularz kontaktowy</li><li>Podstawy SEO</li></ul><a class="btn" href="#kontakt" data-package="Biznes">Wybieram Biznes →</a></article>
+<article class="card price-card"><h3>Indywidualny</h3><p style="color:var(--muted);font-size:.83rem">Dla większych projektów i dodatkowych funkcji.</p><div class="price">Wycena</div><ul class="features"><li>Zakres dopasowany do projektu</li><li>Rozbudowane funkcje</li><li>Integracje do ustalenia</li><li>Plan dalszego rozwoju</li></ul><a class="btn outline" href="#kontakt" data-package="Indywidualny">Opowiedz o pomyśle</a></article>
+</div><p class="disclaimer">Ceny są propozycją do edycji przed publikacją. Domena, hosting, płatne usługi i dodatkowe funkcje mogą być rozliczane osobno.</p></div></section>
+<section class="content faq"><div class="wrap faq-grid"><div class="section-head"><div class="kicker">FAQ</div><h2>Masz pytania?<br><span class="blue">Sprawdź odpowiedzi.</span></h2><p>Nie musisz znać technicznych szczegółów — omówimy je po ludzku.</p></div><div><details><summary>Ile trwa stworzenie strony?</summary><p>Termin zależy od liczby podstron, funkcji i gotowości materiałów. Ustalamy go po określeniu zakresu.</p></details><details><summary>Czy potrzebuję domeny i hostingu?</summary><p>Nie musisz mieć ich na początku. Mogę pomóc wybrać rozwiązanie; koszty usług zewnętrznych omawiamy osobno.</p></details><details><summary>Czy moja strona pojawi się w Google?</summary><p>Przygotuję podstawy SEO i mogę pomóc zgłosić stronę do indeksowania. Nie da się zagwarantować konkretnej pozycji ani terminu pojawienia się w wynikach.</p></details><details><summary>Co muszę przygotować?</summary><p>Na początek wystarczą informacje o firmie, ofercie i sposobie kontaktu. Logo, zdjęcia i teksty możemy omówić wspólnie.</p></details></div></div></section>
+<section class="contact" id="kontakt"><div class="wrap contactbox"><div><div class="kicker">Gotowy na start?</div><h2>Stwórzmy razem coś <span class="blue">wyjątkowego.</span></h2><p>Opowiedz mi o swoim pomyśle. Przygotuję wstępny plan i wycenę, a Ty zdecydujesz, co dalej.</p><p>✓ Bezpłatna pierwsza konsultacja<br>✓ Przejrzysty zakres prac<br>✓ Projekt dopasowany do firmy</p></div>
+<form class="contactform" id="contactForm">
+  <input id="name" name="name" placeholder="Twoje imię"
+         autocomplete="name" required>
+
+  <input id="company" name="company"
+         placeholder="Nazwa firmy (opcjonalnie)">
+
+  <input id="email" name="email" type="email"
+         placeholder="Twój e-mail" autocomplete="email" required>
+
+  <textarea id="message" name="message"
+            placeholder="Napisz, jakiej strony potrzebujesz..."
+            required></textarea>
+
+  <button class="btn" type="submit">
+    Wyślij zapytanie →
+  </button>
+
+  <span id="formStatus" class="hint"
+        role="status" aria-live="polite"></span>
+
+  <span class="hint">
+    Twoje zapytanie zostanie wysłane bezpośrednio przez formularz.
+  </span>
+</form>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footerin"><a class="brand" href="#start"><span class="brand-mark">N</span><span>VEXLUNO<small>Twoja obecność w sieci ma znaczenie.</small></span></a><span>© <span id="year"></span> VEXLUNO. Wszelkie prawa zastrzeżone.</span><div class="footerlinks"><a href="#start">Góra strony ↑</a><a href="#uslugi">Usługi</a><a href="#kontakt">Kontakt</a></div></div></footer>
+<a class="btn mobile-cta" href="#kontakt">Zamów swoją stronę →</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+document.querySelectorAll('[data-package]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('message').value='Interesuje mnie pakiet '+a.dataset.package+'. Proszę o kontakt.'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
+const submitButton = form.querySelector('button[type="submit"]');
+const formspreeEndpoint = 'https://formspree.io/f/xdeavlqn';
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  if (!form.reportValidity()) return;
+
+  const formData = new FormData(form);
+  formData.set('_subject', 'Nowe zapytanie ze strony VEXLUNO');
+  formData.set('_replyto', formData.get('email'));
+
+  status.textContent = 'Wysyłanie wiadomości...';
+  submitButton.disabled = true;
+
+  try {
+    const response = await fetch(formspreeEndpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json'
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error('Nie udało się wysłać wiadomości.');
+    }
+
+    status.textContent =
+      'Dziękuję! Wiadomość została wysłana. Odezwę się wkrótce.';
+    form.reset();
+  } catch (error) {
+    status.textContent =
+      'Nie udało się wysłać wiadomości. Spróbuj ponownie za chwilę.';
+  } finally {
+    submitButton.disabled = false;
+  }
+});
+
+</script>
+</body></html>
